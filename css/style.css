@@ -1,23 +1,23 @@
 body{
-    background-image: url("../images/dark-chocolate-pile.jpg");
-    background-attachment: fixed;
-    background-size:cover;
-    text-align: center;
+    background-color:#FFECEF;
+}
+
+hr{
+    border-style:dotted none none none;
+    border-color:#584153;
+    border-width: 5px;
+    height: 0px;
+    width: 5%;
 }
 
 h1{
-    color: brown;
-    font-size: 50px;
+    color: #AF8BAF;
 }
 
-h1:hover{
-    color: #965612;
-}   
-
-img{
-    background-color:darkkhaki;
+h2{
+    color: #584153;
 }
 
-p{
-    color: white;
+h3{
+    color: #AF8BAF;
 }
