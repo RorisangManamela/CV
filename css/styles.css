@@ -1,0 +1,23 @@
+body{
+    background-image: url("../images/dark-chocolate-pile.jpg");
+    background-attachment: fixed;
+    background-size:cover;
+    text-align: center;
+}
+
+h1{
+    color: brown;
+    font-size: 50px;
+}
+
+h1:hover{
+    color: #965612;
+}   
+
+img{
+    background-color:darkkhaki;
+}
+
+p{
+    color: white;
+}
