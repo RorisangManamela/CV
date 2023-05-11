@@ -10,64 +10,108 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
     </head>
 
-    <body>
-        <nav>
-          <ul class="navigation">
-            <li><a href="index.html" target="_blank">Home</a></li>
-            <li><a href="artworks.html" target="_blank">Artworks</a></li>
-            <li><a href="contact.html" target="_blank">Contact</a></li>
-          </ul>
-        </nav>
+    <body id="top">
+        <div class="upper-section">
+          <nav>
+            <ul class="navigation">
+              <li><a href="index.html" target="_blank">Home</a></li>
+              <li><a href="artworks.html" target="_blank">Artworks</a></li>
+            </ul>
+          </nav>
+        
 
-        <div class="top-container">
-            <img id= "logo" src="images/logo.png" alt="Raeven's logo" width="300px">
-            <h1>I'm Rorisang.</h1>
-            <h2>a programmer.</h2>
+          <div class="top-container">
+              <img id= "logo" src="images/logo.png" alt="Raeven's logo" width="300px">
+                <div class="main-heading">
+                  <h1 >I'm Rorisang.</h1>
+                  <h2>a web designer & artist</h2>
+                </div>
+          </div>
         </div>
 
-        <div class="middle-container">
+        <div class="middle-container" id="mainPageBody">
             <div class="profile">
-              <img src="images/picrew.png" alt="Illustration of Rorisang" width="300px">
-              <h2>Hello.</h2>
-              <p id="intro">
-                I am a freelance web developer and digital artist
-                with a passion for bringing people's ideas to life.</p>
+              <img src="images/picrew.png" alt="Illustration of Rorisang" width="300px" class="picrew">
+              <div class="intro">
+                <h2>Hello.</h2>
+                <p id="intro-text">
+                  I am a freelance web developer and digital artist
+                  with a passion for bringing people's artistic visions to life.</p>
+              </div>
             </div>
-            <hr>
+
+            <!--<hr class="dots1"/>-->
+
             <div class="skills">
-              <h2>My Skills.</h2>
+              <h2>My Skills</h2>
               <div class="skill-row">
-                <a href="https://www.flaticon.com/free-icons/laptop" title="laptop icons" target="_blank">
+                <a name="https://www.flaticon.com/free-icons/laptop" class="skill-images" title="laptop icons" target="_blank">
                     <img src="images/laptop.png" class="skill-webdev" alt="laptop icon" width="140"/></a>
-                <h3>Website development</h3>
+                <h3>Website Development & Design</h3>
                 <p id="skill-webdev-descr">
-                  Making stuff is fun. Computers are fun. Website development is fun.</p>
+                  Designing, coding and implementing websites for a variety of purposes.</p>
               </div>
               <div class="skill-row">
-                <a href="https://www.flaticon.com/free-icons/anime" class="skill-images" title="anime icons" target="_blank">
+                <a name="https://www.flaticon.com/free-icons/anime" class="skill-images" title="anime icons" target="_blank">
                     <img src="images/anime.png" class="skill-art" alt="Anime sticker" width="140"></a>
                 <h3>Digital Art & Animation</h3>
                 <p id="skill-art-descr">
-                  Creating stories through a visual medium is a passion of mine.</p>
+                  Creating stories through visual mediums with art and animations.</p>
               </div>
             </div>
-            <hr>
+            <!--<hr class="dots1"/>-->
 
             <div class="contact-me">
               <h2>Get In Touch</h2>
-              <h3>I'm open for commisions.</h3>
+              <h3>I'm open for commisions and internships.</h3><br/><br/><br/>
+              
+              <div class="socialLinks">
+                <div>
+                  <a href="mailto:manamela.rorisangm@gmail.com" target="_blank">
+                    <img src="images/socials/icons8-email-50.png" class="socialIcons" alt="Email" width="140"/>
+                    <h3>Email</h3>
+                  </a>
+                </div>
+                <div>
+                  <a href="https://www.instagram.com/nonexistentbird/" target="_blank">
+                    <img src="images/socials/icons8-instagram-50.png" class="socialIcons" alt="Instagram" width="140"/>
+                    <h3>Instagram</h3>
+                  </a>
+                </div>
+
+                <div>
+                  <a href="https://www.linkedin.com/in/rorisang-manamela-9110a9218/" target="_blank">
+                    <img src="images/socials/icons8-linkedin-50.png" class="socialIcons" alt="LinkedIn" width="140"/>
+                    <h3>LinkedIn</h3>
+                  </a>
+                </div>
+                <div>
+                  <a class="footer-link" href="https://twitter.com/obsidianraeven" target="_blank">
+                    <img src="images/socials/icons8-twitter-squared-50.png" class="socialIcons" alt="Twitter" width="140"/>
+                    <h3>Twitter</h3>
+                  </a>
+                </div>
+              </div>
+            
+              <!-- <a class="footer-link" href="https://www.linkedin.com/in/rorisang-manamela-9110a9218/" target="_blank">LinkedIn</a>
+            <a class="footer-link" href="https://www.instagram.com/nonexistentbird/" target="_blank">Instagram</a>
+            <a class="footer-link" href="https://twitter.com/obsidianraeven" target="_blank">Twitter</a> -->
+
               <p class="contact-message">Feel free to contact me for work, or any questions you may have.</p>
-              <a class="btn" href="mailto:mmrorisangmanamela@gmail.com">CONTACT ME</a>
+
+              <a class="back-to-top" href="#top">Back to top ↑</a>
             </div>
-            <a class="back-to-top" href="#logo">Back to top</a>
         </div>
           
           
         <div class="bottom-container">
-            <a class="footer-link" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-            <a class="footer-link" href="https://www.instagram.com/nonexistentbird/" target="_blank">Instagram</a>
-            <a class="footer-link" href="https://twitter.com/obsidianraeven" target="_blank">Twitter</a>
-            <p class="trademark">© <small>Rorisang Manamela.</small></p>
+          <p class="trademark">© <small>Rorisang Manamela.</small></p>
         </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/MotionPathPlugin.min.js" integrity="sha512-apmmg/pA2CNTUCcl/2YtJWqnOdj1DaQVINtVMlDwQZ99UP8cS/TJX0Xdev4abxVXyEDxrECMvE3Az6ujryBwyA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js" integrity="sha512-ht40uOoiTef4nKq0THVzjIGh3VS108J577LVVgNXnQLXza3doXjoM3owin2vd+Hm6w88k12RIrePIVY2WNzz6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="script.js"></script>
     </body>
 </html>
