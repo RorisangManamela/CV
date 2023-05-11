@@ -1,5 +1,13 @@
 /**************************General************************/
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
 body{
     color: #474051;
     margin: 0px;
@@ -45,20 +53,24 @@ p{
 /**************Images*************/
 #logo{
     right: 30px;
-    position: absolute;
-    top: 30px;
+    position: fixed;
+    top: 180px;
+}
+
+.picrew{
+    margin-bottom: 30px;
 }
 
 /**************Links*************/
 a{
-    color: #3F3351;
+    color: #cbb3c6;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     margin: 10px 20px;
 }
 
 a:visited{
-    color: #3F3351;
+    color: #cbb3c6;
 }
 
 a:hover{
@@ -68,9 +80,19 @@ a:hover{
 
 .back-to-top{
     color: #3F3351;
+    margin-top: 5px;
 }
 
 .back-to-top:visited{
+    color: #3F3351;
+}
+
+.back-to-topArt{
+    color: #3F3351;
+    margin-top: 5px;
+}
+
+.back-to-topArt:visited{
     color: #3F3351;
 }
 
@@ -83,20 +105,48 @@ a:hover{
 }
 
 .trademark{
-   color: #cbb3c6;
-   font-size: 0.75rem;
-   padding: 20px 0px;
+    text-align: center;
+    color: #cbb3c6;
+    font-size: 1rem;
+    padding: 20px 0px;
+    display: inline;
+    z-index: 2;
+    padding: 0%;
 }
+
+.footer-link{
+    text-align: center;
+    color: #cbb3c6;
+    font-size: 1rem;
+    padding: 20px 0px;
+    display: inline;
+    z-index: 2;
+    padding: 0%;
+}
+
+
 
 /**************************Navigation************************/
 nav{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 1.5rem;
     background-color: #864879;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    height: 80px;
+    display: flex;             
+    align-items: center;       
+    justify-content: center;   
 }
 
 .navigation{
-    margin: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
 }
 
 .navigation > li {
@@ -104,16 +154,50 @@ nav{
 }
 
 /**************************Top************************/
+
+.upper-section{
+    width: 100%;
+    height: 150vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 1fr;
+}
+
+
 .top-container{
     background-color: #1F1D36;
     margin-left: 0px;
     margin-top:0px;
     padding-top: 100px;
     padding-bottom: 100px;
-    position: relative;
+    position: fixed;
+    top: 80px;
+    height: 150vh;
+    width: 100%;
+    
 }
 
-#intro{
+.main-heading h1{
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    z-index: 0;
+}
+
+.main-heading h2{
+    animation-name: azureAnimation;
+    animation-duration: 4s;
+    position: fixed;
+    top: 55%;
+    left: 30%;
+}
+
+.intro{
+    animation-name: azureAnimation;
+    animation-duration: 1s;
+}
+
+#intro-text{
     width: 40%;
     margin: auto;
 }
@@ -121,8 +205,21 @@ nav{
 /**************************Middle************************/
 
 .middle-container{
+    position: relative;
     background-color: #eae6f1;
-    padding: 100px 0px 50px;
+    padding: 400px 0px 50px;
+    z-index: 1;
+}
+
+#mainPageBody{
+    height: 520vh;
+}
+
+.skills{
+    position: fixed;
+    top: 150vh;
+    left: 35%;
+    width: 70%;
 }
 
 .skill-row{
@@ -136,20 +233,56 @@ nav{
     float: left;
     margin-right: 30px;
     width: 25%;
+    position: relative;
+    top: 25px;
 }
 
 .skill-art{
-    float: right;
-    margin-left: 30px;
+    float: left;
+    margin-right: 30px;
     width: 25%;
+    position: relative;
+    top: 25px;
+}
+
+.profile{
+    position: fixed;
+    top: 150vh;
+    left: 17%;
+}
+
+/**************************Contact************************/
+.contact-me{
+    margin-bottom: 30px;
+    position: fixed;
+    top: 150vh;
+    left: 30%;
+}
+.socialIcons{
+    width: 45px;
+}
+
+.socialLinks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
 }
 
 /**************************Bottom************************/
 
 .bottom-container{
     margin-bottom: 0px;
-    padding: 40px 0px 20px;
+    padding: 30px 0px 10px;
     background-color: #864879;
+    z-index: 2;
+    width: 100%;
+    height: 80px;
+    display: flex; 
+    flex-direction: column;            
+    align-items: center;       
+    justify-content: center; 
+
 }
 
 .trademark{
@@ -158,14 +291,18 @@ nav{
     padding-bottom: 10px;
 }
 
-/**************Contact*************/
-.contact-me{
-    margin-bottom: 30px;
-}
+/*************************** ANIMATIONS ***************************/
+
+@keyframes azureAnimation{
+    from {opacity: 0}
+    to {opacity: 1;}
+    }
+
+
 
 .contact-message{
-    width: 40%;
-    margin: 40px auto 60px;
+    width: 60%;
+    margin: 30px auto 40px;
 }
 
 .btn {
@@ -178,10 +315,149 @@ nav{
     background: #864879;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
-  }
+}
   
   .btn:hover {
     background: #b857a8;
     text-decoration: none;
     color: #ffffff;
-  }
+}
+
+/**************************Artworks************************/
+
+.image-container{
+    position: relative;
+    background-color: #eae6f1;
+    padding: 200px 0px 50px;
+    z-index: 1;
+    height: 700vh;
+}
+
+#the8{
+    position: absolute;
+    top: 50vh;
+    left: 10%;
+    opacity: 0;
+}
+
+#the8 figcaption{
+    position: absolute;
+    top: 25vh;
+    left: 110%;
+    width: 50%;
+    font-size: 2rem;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+}
+
+#skye{
+    position: absolute;
+    top: 115vh;
+    right: 10%;
+    opacity: 0;
+}
+
+#skye img{
+    height: 30%;
+}
+
+#skye figcaption{
+    font-size: 2rem;
+    position: absolute;
+    top: 40vh;
+    right: 100%;
+    width: 50%;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+}
+
+#underwater{
+    position: absolute;
+    top: 217vh;
+    left: 5%;
+    opacity: 0;
+}
+
+#underwater img{
+    height: 40%;
+}
+
+#underwater figcaption{
+    font-size: 2rem;
+    position: absolute;
+    top: 50vh;
+    left: 110%;
+    width: 60%;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+}
+
+#gemini{
+    position: absolute;
+    top: 355vh;
+    right: 5%;
+    opacity: 0;
+}
+
+#gemini img{
+    height: 30%;
+}
+
+#gemini figcaption{
+    font-size: 2rem;
+    position: absolute;
+    top: 50vh;
+    right: 100%;
+    width: 60%;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+}
+
+#skater{
+    position: absolute;
+    top: 470vh;
+    left: 5%;
+    opacity: 0;
+}
+
+#skater img{
+    height: 30%;
+}
+
+#skater figcaption{
+    font-size: 2rem;
+    position: absolute;
+    top: 50vh;
+    left: 110%;
+    width: 60%;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+}
+
+#aries{
+    position: absolute;
+    top: 595vh;
+    right: 5%;
+    opacity: 0;
+}
+
+#aries figcaption{
+    font-size: 2rem;
+    position: absolute;
+    top: 30vh;
+    right: 90%;
+    width: 60%;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+}
+
+.back-to-topArt{
+    position: absolute;
+    top: 690vh;
+    left: 45%;
+}
+
+
+
+
+
