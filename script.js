@@ -7,18 +7,18 @@ console.log("ScrollTrigger", ScrollTrigger)
 /////////////////////////////////// Profile In /////////////////////////////////////
 
 const picrewPath = [
-  { left: '17%', top: 80 },
+  { left: '30%', top: 90 },
 ]
 
 const picrewTL = gsap.timeline({
 	scrollTrigger: {
-	trigger: ".top-container",
+	trigger: ".main-heading",
 	scrub: 2,
-	start: 150,
+	start: 350,
 	},
 })
 
-picrewTL.to(".profile", {
+picrewTL.to(".intro", {
 	motionPath: {
 		path: picrewPath,
 		autoRotate: false,
@@ -30,7 +30,7 @@ picrewTL.to(".profile", {
 /////////////////////////////////// Profile Shift /////////////////////////////////////
 
 const picrewPath2 = [
-	{ left: '-10%', top: 80 },
+	{ left: '8%', top: 90 },
   ]
   
   const picrewTL2 = gsap.timeline({
@@ -41,7 +41,7 @@ const picrewPath2 = [
 	  },
   })
   
-  picrewTL2.to(".profile", {
+  picrewTL2.to(".intro", {
 	  motionPath: {
 		  path: picrewPath2,
 		  autoRotate: false,
@@ -64,7 +64,7 @@ const picrewPath3 = [
 	  },
   })
   
-  picrewTL3.to(".profile", {
+  picrewTL3.to(".intro", {
 	  motionPath: {
 		  path: picrewPath3,
 		  autoRotate: false,
@@ -76,7 +76,7 @@ const picrewPath3 = [
 /////////////////////////////////// Skills in /////////////////////////////////////
 
 const skillsPath = [
-	{ left: '35%', top: 120 },
+	{ left: '30%', top: '30%' },
   ]
   
   const skillsTL = gsap.timeline({
@@ -87,7 +87,7 @@ const skillsPath = [
 	  },
   })
   
-  skillsTL.to(".skills", {
+  skillsTL.to(".intro-skills", {
 	  motionPath: {
 		  path: skillsPath,
 		  autoRotate: false,
@@ -110,7 +110,7 @@ const skillsPath2 = [
 	  },
   })
   
-  skillsTL2.to(".skills", {
+  skillsTL2.to(".intro-skills", {
 	  motionPath: {
 		  path: skillsPath2,
 		  autoRotate: false,
@@ -155,7 +155,7 @@ const footerPath = [
 	  },
   })
   
-  footerTL.to(".botom-container", {
+  footerTL.to(".bottom-container", {
 	  motionPath: {
 		  path: footerPath,
 		  autoRotate: false,
@@ -163,142 +163,51 @@ const footerPath = [
 	  duration: 1,
   });
 
-  /////////////////////////////////// The8 In /////////////////////////////////////
+/////////////////////////////////// Top Out /////////////////////////////////////
 
-const the8Path = [
-	{ opacity: 1 },
+const topPath = [
+	{ left: '0%', top:'-150vh' },
   ]
   
-  const the8TL = gsap.timeline({
+  const topTL = gsap.timeline({
 	  scrollTrigger: {
-	  trigger: ".top-container",
+	  trigger: ".design",
 	  scrub: 2,
-	  start: 700,
+	  start: 150,
 	  },
   })
   
-  the8TL.to("#the8", {
+  topTL.to(".top-container", {
 	  motionPath: {
-		  path: the8Path,
+		  path: topPath,
 		  autoRotate: false,
 	  },
 	  duration: 1,
 	ease: Power1.easeInOut,
   });
 
-  /////////////////////////////////// Skye In /////////////////////////////////////
+/////////////////////////////////// Profile Disappear /////////////////////////////////////
 
-const skyePath = [
-	{ opacity: 1 },
+const proPath = [
+	{ opacity: 0 },
   ]
   
-  const skyeTL = gsap.timeline({
+  const proTL = gsap.timeline({
 	  scrollTrigger: {
-	  trigger: ".top-container",
+	  trigger: ".design",
 	  scrub: 2,
-	  start: 1300,
+	  start: 150,
 	  },
   })
   
-  skyeTL.to("#skye", {
+  proTL.to(".top-container", {
 	  motionPath: {
-		  path: skyePath,
+		  path: proPath,
 		  autoRotate: false,
 	  },
 	  duration: 1,
 	ease: Power1.easeInOut,
   });
 
-/////////////////////////////////// Water In /////////////////////////////////////
 
-const waterPath = [
-	{ opacity: 1 },
-  ]
-  
-  const waterTL = gsap.timeline({
-	  scrollTrigger: {
-	  trigger: ".top-container",
-	  scrub: 2,
-	  start: 1800,
-	  },
-  })
-  
-  waterTL.to("#underwater", {
-	  motionPath: {
-		  path: waterPath,
-		  autoRotate: false,
-	  },
-	  duration: 1,
-	ease: Power1.easeInOut,
-  });
 
-/////////////////////////////////// Gemini In /////////////////////////////////////
-
-const geminiPath = [
-	{ opacity: 1 },
-  ]
-  
-  const geminiTL = gsap.timeline({
-	  scrollTrigger: {
-	  trigger: ".top-container",
-	  scrub: 2,
-	  start: 2600,
-	  },
-  })
-  
-  geminiTL.to("#gemini", {
-	  motionPath: {
-		  path: geminiPath,
-		  autoRotate: false,
-	  },
-	  duration: 1,
-	ease: Power1.easeInOut,
-  });
-
-/////////////////////////////////// Skater In /////////////////////////////////////
-
-const skaterPath = [
-	{ opacity: 1 },
-  ]
-  
-  const skaterTL = gsap.timeline({
-	  scrollTrigger: {
-	  trigger: ".top-container",
-	  scrub: 2,
-	  start: 3300,
-	  },
-  })
-  
-  skaterTL.to("#skater", {
-	  motionPath: {
-		  path: skaterPath,
-		  autoRotate: false,
-	  },
-	  duration: 1,
-	ease: Power1.easeInOut,
-  });
-
-/////////////////////////////////// Aries In /////////////////////////////////////
-
-const ariesPath = [
-	{ opacity: 1 },
-  ]
-  
-  const ariesTL = gsap.timeline({
-	  scrollTrigger: {
-	  trigger: ".top-container",
-	  scrub: 2,
-	  start: 4100,
-	  },
-  })
-  
-  ariesTL.to("#aries", {
-	  motionPath: {
-		  path: ariesPath,
-		  autoRotate: false,
-	  },
-	  duration: 1,
-	ease: Power1.easeInOut,
-  });
-
- 
