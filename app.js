@@ -4,14 +4,14 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
         if (entry.isIntersecting) {
-            entry.target.classList.add('show');
+            entry.target.classList.add('showTitle');
         } else {
-            entry.target.classList.remove('show');
+            entry.target.classList.remove('showTitle');
         }
     });
 });
 
-const hiddenElements = document.querySelectorAll('.hidden');
+const hiddenElements = document.querySelectorAll('.hiddenTitle');
 hiddenElements.forEach((el) => observer.observe(el));
 
 
@@ -48,3 +48,21 @@ const observerIconRight = new IntersectionObserver((entries) => {
 
 const hiddenElementsIconRight = document.querySelectorAll('.hiddeniconRight');
 hiddenElementsIconRight.forEach((el) => observerIconRight.observe(el));
+
+////////////////// Intro animation  /////////////////
+
+const observerIntro = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('showIntro');
+        } 
+        else {
+            entry.target.classList.remove('showIntro');
+        }
+    });
+});
+
+const hiddenElementsIntro= document.querySelectorAll('.hiddenIntro');
+hiddenElementsIntro.forEach((el) => observerIntro.observe(el));
+
