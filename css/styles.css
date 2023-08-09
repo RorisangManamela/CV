@@ -519,7 +519,7 @@ button:visited{
 /*Medium Phones (375 x 210)*/
 @media screen and (max-width: 649px){
     .logo{
-        width: 60%;
+        width: 40%;
     }
     .tech-icons-box{
         flex-wrap: wrap;
@@ -533,6 +533,14 @@ button:visited{
     
     .top-container{
         flex-direction: column;
+    }
+
+    .main-heading h1{
+        font-size: 3em;
+    }
+
+    .main-heading h2{
+        font-size: 1em;
     }
 
 }
