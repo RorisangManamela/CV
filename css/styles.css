@@ -536,11 +536,11 @@ button:visited{
     }
 
     .main-heading h1{
-        font-size: 3em;
+        font-size: 1em;
     }
 
     .main-heading h2{
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
 }
